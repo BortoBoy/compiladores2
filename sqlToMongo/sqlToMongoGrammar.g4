@@ -1,8 +1,14 @@
 grammar sqlToMongo
 
-STRING: ([a-z]|[A-Z]|[0-9]|\_)+;
+IDENT: ([a-z]|[A-Z]|[0-9]|\_)+;
+OP:(\=|\>|\<);
 
-query: "SELECT" campos "FROM" table;
+
+query: "SELECT" campos "FROM" table "WHERE" comparison;
 campos: "*" | campo (",", campo)*;
-campo: IDENT
-table: IDENT
+campo: IDENT;
+table: IDENT;
+comparison: column operator value;
+column: IDENT;
+operator: OP;
+value: """ IDENT """;
