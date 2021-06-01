@@ -1,14 +1,21 @@
-import sys
 from antlr4 import *
-from MyGrammarLexer import MyGrammarLexer
-from MyGrammarParser import MyGrammarParser
+from grammar.GrammarLexer import GrammarLexer
+from grammar.GrammarListener import GrammarListener
+from grammar.GrammarParser import GrammarParser
+import sys
+
+class GrammarPrintListener(GrammarListener):
+    def enterHi(self, ctx):
+        print("Grammar: %s" % ctx.ID())
 
 def main(argv):
-    input_stream = FileStream(argv[1])
-    lexer = MyGrammarLexer(input_stream)
+    lexer = GrammarLexer(FileStream(argv[1]))
     stream = CommonTokenStream(lexer)
-    parser = MyGrammarParser(stream)
-    tree = parser.startRule()
+    parser = GrammarParser(stream)
+    tree = parser.hi()
+    printer = GrammarPrintListener()
+    walker = ParseTreeWalker()
+    walker.walk(printer, tree)
 
 if __name__ == '__main__':
     main(sys.argv)

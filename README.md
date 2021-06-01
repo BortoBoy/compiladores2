@@ -17,6 +17,17 @@ bash```
 - Com o arquivo da gramática (.g4) e o jar do antlr4 em mãos execute o comando:
 
 bash```
-java -Xmx500M -cp <path_to_jar> org.antlr.v4.Tool -Dlanguage=Python3 -visitor <path_to_g4>
+java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 -visitor grammar/Grammar.g4
 ```
-- Note que vários arquivos foram gerados, entre eles o <GrammarName>Lexer.py, o <GrammarName>Parser.py, o <GrammarName>Listener.py e o <GrammarName>Visitor.py
+
+- Note que vários os seguintes arquivos foram gerados:
+  - GrammarLexer.py
+  - GrammarParser.py
+  - GrammarListener.py
+  - GrammarVisitor.py
+
+Agora podemos executar o arquivo main.py, que possui a implementação do projeto, usando o seguinte comando:
+
+bash```
+python3 main.py input.txt
+```
