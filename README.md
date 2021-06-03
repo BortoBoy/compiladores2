@@ -16,7 +16,7 @@ sudo python3 setup.py install
 - Com o arquivo da gramática (.g4) e o jar do antlr4 em mãos execute o comando:
 
 bash```
-java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 -visitor grammar/Grammar.g4
+java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 -visitor -no-listener grammar/Grammar.g4
 ```
 
 - Note que vários os seguintes arquivos foram gerados:
