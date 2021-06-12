@@ -1,0 +1,2 @@
+db.tabela1.find({coluna1,coluna2,coluna3})
+db.tabela2.find()

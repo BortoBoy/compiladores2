@@ -7,7 +7,7 @@ Esse trabalho implementará um compilador que traduz uma série de comandos do M
 
 ## Como instalar e usar antlr4 em python
 - Abra um terminal na pasta antlr4-python3-runtime-4.9.2
-- Ou vocẽ pode baixar a mesma pasta do link https://pypi.org/project/antlr4-python3-runtime/#files
+- Você pode baixar a pasta pelo link https://pypi.org/project/antlr4-python3-runtime/#files
 - Execute os comandos:
 ```
 python3 setup.py build
@@ -19,14 +19,22 @@ bash```
 java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 -visitor -no-listener grammar/Grammar.g4
 ```
 
-- Note que vários os seguintes arquivos foram gerados:
+- Note que os seguintes arquivos foram gerados:
   - GrammarLexer.py
   - GrammarParser.py
   - GrammarListener.py
   - GrammarVisitor.py
 
-Agora podemos executar o arquivo main.py, que possui a implementação do projeto, usando o seguinte comando:
+## Executar o projeto
+
+Estando os arquivos lsitados acima gerados, podemos executar o arquivo _main.py_, que possui a implementação do projeto, usando o seguinte comando:
 
 bash```
 python3 main.py input.txt
+```
+
+com esse comando a saída será impressa no terminal, se você quiser salvar a saída em um arquivo basta usar:
+
+bash```
+python3 main.py input.txt output.txt
 ```

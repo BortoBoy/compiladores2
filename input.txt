@@ -1,1 +1,2 @@
-hello bitch
+select coluna1, coluna2, coluna3 from tabela1;
+select * from tabela2;
