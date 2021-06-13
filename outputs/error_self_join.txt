@@ -1,0 +1,1 @@
+Main table and join table should not be the same

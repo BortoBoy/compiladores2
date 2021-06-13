@@ -1,0 +1,26 @@
+db.tabela1.aggregate([
+   {
+     $lookup:
+       {
+         from: "tabela2",
+         localField: "colunax",
+         foreignField: "colunay"
+       }
+  },
+  {
+    $project: {coluna1: 1, coluna2: 1, coluna3: 1}
+  }
+])
+db.tabela2.aggregate([
+   {
+     $lookup:
+       {
+         from: "tabela1",
+         localField: "colunay",
+         foreignField: "colunax"
+       }
+  },
+  {
+    $project: {coluna1: 1, coluna2: 1, coluna3: 1}
+  }
+])

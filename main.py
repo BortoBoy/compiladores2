@@ -1,10 +1,25 @@
+import os
+import sys
 from antlr4 import *
 from grammar.GrammarLexer import GrammarLexer
 from grammar.GrammarParser import GrammarParser
 from MyVisitor import MyVisitor
-import sys
 
 def main(input, output=None):
+    # if input is folder execute recursivelly
+    if os.path.isdir(input):
+        # files base names
+        base_names = os.listdir(input)
+        full_names = [os.path.join(input, name) for name in base_names]
+        output_folder = output
+        if not os.path.isdir(output_folder):
+            os.makedirs(output_folder)
+
+        for name in full_names:
+            output = os.path.join(output_folder,os.path.basename(name))
+            main(name, output)
+        return
+
     # using the lexer make the token stream
     lexer = GrammarLexer(FileStream(input))
     stream = CommonTokenStream(lexer)
@@ -15,6 +30,7 @@ def main(input, output=None):
     # calling the visitor from outter grammar rule
     visitor = MyVisitor()
     visitor.visit(parser.script())
+
 
     if output:
         with open(output, 'w') as f:

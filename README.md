@@ -27,13 +27,19 @@ java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 
 
 ## Executar o projeto
 
-Estando os arquivos lsitados acima gerados, podemos executar o arquivo _main.py_, que possui a implementação do projeto, usando o seguinte comando:
+Estando os arquivos listados acima gerados, podemos executar o arquivo _main.py_, que possui a implementação do projeto, usando o seguinte comando:
 
 ```bash
 python3 main.py input.txt
 ```
 
 com esse comando a saída será impressa no terminal, se você quiser salvar a saída em um arquivo basta usar:
+
+```bash
+python3 main.py input.txt output.txt
+```
+
+Você também pode executar vários arquivos de uma vez passando o nome de uma pasta para inputs e de uam pasta para outputs, todos os arquivos de dentro da inputs serão executados e seus respectivos resutlados serão salvos com o respectivo nome na pasta outputs, exemplo:
 
 ```bash
 python3 main.py input.txt output.txt

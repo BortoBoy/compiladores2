@@ -1,0 +1,1 @@
+select coluna1, coluna2, coluna3 from tabela1 left join tabela1 on tabela1.colunax = tabela1.colunay;
