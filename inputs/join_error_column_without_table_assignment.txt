@@ -1,0 +1,2 @@
+# colunas do join devem possuir o nome da tabela
+select coluna1, coluna2 from tabela1 left join tabela2 on tabela1.colunax = tabela2.colunay;

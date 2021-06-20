@@ -1,0 +1,3 @@
+Field 'coluna3' assigned to table 'z', but there is no table 'z' in the sentence
+Field 'colunax' assigned to table 'z', but there is no table 'z' in the sentence
+Field 'coluna2' assigned to table 'y', but there is no table 'y' in the sentence

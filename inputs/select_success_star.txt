@@ -1,1 +1,1 @@
-select * from tabela1X;
+select * from pessoa;

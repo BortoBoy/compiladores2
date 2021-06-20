@@ -1,1 +1,1 @@
-db.tabela1X.find({col1,col2,col3})
+db.pessoa.find({}, {_id: 0, nome: 1})

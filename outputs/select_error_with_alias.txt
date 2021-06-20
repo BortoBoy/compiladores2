@@ -1,0 +1,6 @@
+Error on field: 'tabelaX.colunaA' there is no table 'tabelaX' in the sentence'
+Error on field: 'tabelaX.colunaB' there is no table 'tabelaX' in the sentence'
+Error on field: 'tabelaX.colunaC' there is no table 'tabelaX' in the sentence'
+Error on field: 'tabelaX.colunaA' there is no table 'tabelaX' in the sentence'
+Error on field: 'tabelaX.colunaB' there is no table 'tabelaX' in the sentence'
+Error on field: 'tabelaX.colunaC' there is no table 'tabelaX' in the sentence'

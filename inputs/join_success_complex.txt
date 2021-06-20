@@ -1,0 +1,19 @@
+select
+  responsavel.nome as nome_responsavel,
+  dependente.nome as nome_dependente
+from
+  pessoa as responsavel
+left join
+  pessoa as dependente
+on
+  responsavel.cpf_filho = dependente.cpf;
+
+select
+  responsavel.nome as nome_responsavel,
+  dependente.nome as nome_dependente
+from
+  pessoa as responsavel
+right join
+  pessoa as dependente
+on
+  responsavel.cpf_filho = dependente.cpf;

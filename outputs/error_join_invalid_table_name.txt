@@ -1,4 +1,0 @@
-Invalid table name into join: 'tabela3'
-Invalid table name into join: 'tabela3'
-Invalid table name into join: 'tabela3'
-Invalid table name into join: 'tabela4'

@@ -1,0 +1,32 @@
+db.pessoa.insertMany([
+  {
+    nome: "Mariazinha Betânia",
+    idade: 37,
+    email: "mariazinha@gmail.com",
+    telefone: "1111-1111",
+    cpf: 1,
+    cpf_filho: 3
+  },
+  {
+    nome: "Zézinho Xanfroneiro",
+    idade: 35,
+    email: "zédopésujo@gmail.com",
+    telefone: "2222-2222",
+    cpf: 2,
+    cpf_filho: 4
+  },
+  {
+    nome: "Eduardo Fedorento",
+    idade: 7,
+    email: "eduzinhoquerido@gmail.com",
+    telefone: "3333-3333",
+    cpf: 3
+  },
+  {
+    nome: "Cintia Morena",
+    idade: 13,
+    email: "cintiazinha@gmail.com",
+    telefone: "4444-4444",
+    cpf: 4
+  }
+])

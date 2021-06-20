@@ -14,6 +14,16 @@ class GrammarVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by GrammarParser#select_base_field.
+    def visitSelect_base_field(self, ctx:GrammarParser.Select_base_fieldContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GrammarParser#select_base_table.
+    def visitSelect_base_table(self, ctx:GrammarParser.Select_base_tableContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by GrammarParser#select_base.
     def visitSelect_base(self, ctx:GrammarParser.Select_baseContext):
         return self.visitChildren(ctx)

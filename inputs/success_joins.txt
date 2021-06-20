@@ -1,2 +1,0 @@
-select coluna1, coluna2, coluna3 from tabela1 left join tabela2 on tabela1.colunax = tabela2.colunay;
-select coluna1, coluna2, coluna3 from tabela1 right join tabela2 on tabela1.colunax = tabela2.colunay;

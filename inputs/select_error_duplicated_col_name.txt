@@ -1,1 +1,5 @@
+# coluna1 esta duplicada
 select coluna1, coluna1, coluna3 from tabela1;
+
+# tabela1.coluna1 esta duplicada
+select tabela1.coluna1, tabela1.coluna1, coluna3 from tabela1;

@@ -1,0 +1,1 @@
+select p.nome as nomep, p.idade as idadep from pessoa as p;

@@ -1,1 +1,2 @@
-Duplicated column name: coluna1
+Duplicated column name: 'coluna1'
+Duplicated column name: 'tabela1.coluna1'

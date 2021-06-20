@@ -11,25 +11,30 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\17")
-        buf.write("9\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\3\2")
-        buf.write("\3\2\7\2\21\n\2\f\2\16\2\24\13\2\3\3\3\3\3\3\3\3\7\3\32")
-        buf.write("\n\3\f\3\16\3\35\13\3\3\3\5\3 \n\3\3\3\3\3\3\3\3\4\3\4")
-        buf.write("\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\6\3\6\3")
-        buf.write("\6\3\7\3\7\3\7\3\7\3\7\2\2\b\2\4\6\b\n\f\2\3\3\2\n\f\2")
-        buf.write("\66\2\22\3\2\2\2\4\25\3\2\2\2\6$\3\2\2\2\b&\3\2\2\2\n")
-        buf.write("\61\3\2\2\2\f\64\3\2\2\2\16\21\5\n\6\2\17\21\5\f\7\2\20")
-        buf.write("\16\3\2\2\2\20\17\3\2\2\2\21\24\3\2\2\2\22\20\3\2\2\2")
-        buf.write("\22\23\3\2\2\2\23\3\3\2\2\2\24\22\3\2\2\2\25\37\7\3\2")
-        buf.write("\2\26\33\7\16\2\2\27\30\7\7\2\2\30\32\7\16\2\2\31\27\3")
-        buf.write("\2\2\2\32\35\3\2\2\2\33\31\3\2\2\2\33\34\3\2\2\2\34 \3")
-        buf.write("\2\2\2\35\33\3\2\2\2\36 \7\5\2\2\37\26\3\2\2\2\37\36\3")
-        buf.write("\2\2\2 !\3\2\2\2!\"\7\4\2\2\"#\7\16\2\2#\5\3\2\2\2$%\t")
-        buf.write("\2\2\2%\7\3\2\2\2&\'\5\6\4\2\'(\7\16\2\2()\7\r\2\2)*\7")
-        buf.write("\16\2\2*+\7\b\2\2+,\7\16\2\2,-\7\t\2\2-.\7\16\2\2./\7")
-        buf.write("\b\2\2/\60\7\16\2\2\60\t\3\2\2\2\61\62\5\4\3\2\62\63\7")
-        buf.write("\6\2\2\63\13\3\2\2\2\64\65\5\4\3\2\65\66\5\b\5\2\66\67")
-        buf.write("\7\6\2\2\67\r\3\2\2\2\6\20\22\33\37")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20")
+        buf.write("K\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("\t\b\4\t\t\t\3\2\3\2\7\2\25\n\2\f\2\16\2\30\13\2\3\3\3")
+        buf.write("\3\5\3\34\n\3\3\3\3\3\3\3\5\3!\n\3\3\4\3\4\3\4\5\4&\n")
+        buf.write("\4\3\5\3\5\3\5\3\5\7\5,\n\5\f\5\16\5/\13\5\3\5\5\5\62")
+        buf.write("\n\5\3\5\3\5\3\5\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3")
+        buf.write("\7\3\7\3\7\3\7\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\2\2\n\2")
+        buf.write("\4\6\b\n\f\16\20\2\3\3\2\n\13\2I\2\26\3\2\2\2\4\33\3\2")
+        buf.write("\2\2\6\"\3\2\2\2\b\'\3\2\2\2\n\66\3\2\2\2\f8\3\2\2\2\16")
+        buf.write("C\3\2\2\2\20F\3\2\2\2\22\25\5\16\b\2\23\25\5\20\t\2\24")
+        buf.write("\22\3\2\2\2\24\23\3\2\2\2\25\30\3\2\2\2\26\24\3\2\2\2")
+        buf.write("\26\27\3\2\2\2\27\3\3\2\2\2\30\26\3\2\2\2\31\32\7\16\2")
+        buf.write("\2\32\34\7\b\2\2\33\31\3\2\2\2\33\34\3\2\2\2\34\35\3\2")
+        buf.write("\2\2\35 \7\16\2\2\36\37\7\r\2\2\37!\7\16\2\2 \36\3\2\2")
+        buf.write("\2 !\3\2\2\2!\5\3\2\2\2\"%\7\16\2\2#$\7\r\2\2$&\7\16\2")
+        buf.write("\2%#\3\2\2\2%&\3\2\2\2&\7\3\2\2\2\'\61\7\3\2\2(-\5\4\3")
+        buf.write("\2)*\7\7\2\2*,\5\4\3\2+)\3\2\2\2,/\3\2\2\2-+\3\2\2\2-")
+        buf.write(".\3\2\2\2.\62\3\2\2\2/-\3\2\2\2\60\62\7\5\2\2\61(\3\2")
+        buf.write("\2\2\61\60\3\2\2\2\62\63\3\2\2\2\63\64\7\4\2\2\64\65\5")
+        buf.write("\6\4\2\65\t\3\2\2\2\66\67\t\2\2\2\67\13\3\2\2\289\5\n")
+        buf.write("\6\29:\5\6\4\2:;\7\f\2\2;<\7\16\2\2<=\7\b\2\2=>\7\16\2")
+        buf.write("\2>?\7\t\2\2?@\7\16\2\2@A\7\b\2\2AB\7\16\2\2B\r\3\2\2")
+        buf.write("\2CD\5\b\5\2DE\7\6\2\2E\17\3\2\2\2FG\5\b\5\2GH\5\f\7\2")
+        buf.write("HI\7\6\2\2I\21\3\2\2\2\t\24\26\33 %-\61")
         return buf.getvalue()
 
 
@@ -44,22 +49,24 @@ class GrammarParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'select'", "'from'", "'*'", "';'", "','", 
-                     "'.'", "'='", "'inner join'", "'right join'", "'left join'", 
-                     "'on'" ]
+                     "'.'", "'='", "'right join'", "'left join'", "'on'", 
+                     "'as'" ]
 
     symbolicNames = [ "<INVALID>", "SELECT", "FROM", "STAR", "SEMI_COLUMN", 
-                      "COMMA", "POINT", "EQUALS", "INNER_JOIN", "RIGHT_JOIN", 
-                      "LEFT_JOIN", "ON", "IDENT", "WS" ]
+                      "COMMA", "POINT", "EQUALS", "RIGHT_JOIN", "LEFT_JOIN", 
+                      "ON", "AS", "IDENT", "WS", "LINE_COMMENT" ]
 
     RULE_script = 0
-    RULE_select_base = 1
-    RULE_join_type = 2
-    RULE_join_base = 3
-    RULE_simple_select_command = 4
-    RULE_select_with_join_command = 5
+    RULE_select_base_field = 1
+    RULE_select_base_table = 2
+    RULE_select_base = 3
+    RULE_join_type = 4
+    RULE_join_base = 5
+    RULE_simple_select_command = 6
+    RULE_select_with_join_command = 7
 
-    ruleNames =  [ "script", "select_base", "join_type", "join_base", "simple_select_command", 
-                   "select_with_join_command" ]
+    ruleNames =  [ "script", "select_base_field", "select_base_table", "select_base", 
+                   "join_type", "join_base", "simple_select_command", "select_with_join_command" ]
 
     EOF = Token.EOF
     SELECT=1
@@ -69,12 +76,13 @@ class GrammarParser ( Parser ):
     COMMA=5
     POINT=6
     EQUALS=7
-    INNER_JOIN=8
-    RIGHT_JOIN=9
-    LEFT_JOIN=10
-    ON=11
+    RIGHT_JOIN=8
+    LEFT_JOIN=9
+    ON=10
+    AS=11
     IDENT=12
     WS=13
+    LINE_COMMENT=14
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -125,27 +133,157 @@ class GrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 16
+            self.state = 20
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==GrammarParser.SELECT:
-                self.state = 14
+                self.state = 18
                 self._errHandler.sync(self)
                 la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
                 if la_ == 1:
-                    self.state = 12
+                    self.state = 16
                     self.simple_select_command()
                     pass
 
                 elif la_ == 2:
-                    self.state = 13
+                    self.state = 17
                     self.select_with_join_command()
                     pass
 
 
-                self.state = 18
+                self.state = 22
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Select_base_fieldContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.table = None # Token
+            self.field = None # Token
+            self.alias = None # Token
+
+        def IDENT(self, i:int=None):
+            if i is None:
+                return self.getTokens(GrammarParser.IDENT)
+            else:
+                return self.getToken(GrammarParser.IDENT, i)
+
+        def POINT(self):
+            return self.getToken(GrammarParser.POINT, 0)
+
+        def AS(self):
+            return self.getToken(GrammarParser.AS, 0)
+
+        def getRuleIndex(self):
+            return GrammarParser.RULE_select_base_field
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSelect_base_field" ):
+                return visitor.visitSelect_base_field(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def select_base_field(self):
+
+        localctx = GrammarParser.Select_base_fieldContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 2, self.RULE_select_base_field)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 25
+            self._errHandler.sync(self)
+            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
+            if la_ == 1:
+                self.state = 23
+                localctx.table = self.match(GrammarParser.IDENT)
+                self.state = 24
+                self.match(GrammarParser.POINT)
+
+
+            self.state = 27
+            localctx.field = self.match(GrammarParser.IDENT)
+            self.state = 30
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==GrammarParser.AS:
+                self.state = 28
+                self.match(GrammarParser.AS)
+                self.state = 29
+                localctx.alias = self.match(GrammarParser.IDENT)
+
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Select_base_tableContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.table = None # Token
+            self.alias = None # Token
+
+        def IDENT(self, i:int=None):
+            if i is None:
+                return self.getTokens(GrammarParser.IDENT)
+            else:
+                return self.getToken(GrammarParser.IDENT, i)
+
+        def AS(self):
+            return self.getToken(GrammarParser.AS, 0)
+
+        def getRuleIndex(self):
+            return GrammarParser.RULE_select_base_table
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSelect_base_table" ):
+                return visitor.visitSelect_base_table(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def select_base_table(self):
+
+        localctx = GrammarParser.Select_base_tableContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 4, self.RULE_select_base_table)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 32
+            localctx.table = self.match(GrammarParser.IDENT)
+            self.state = 35
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==GrammarParser.AS:
+                self.state = 33
+                self.match(GrammarParser.AS)
+                self.state = 34
+                localctx.alias = self.match(GrammarParser.IDENT)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -169,14 +307,19 @@ class GrammarParser ( Parser ):
         def FROM(self):
             return self.getToken(GrammarParser.FROM, 0)
 
-        def IDENT(self, i:int=None):
-            if i is None:
-                return self.getTokens(GrammarParser.IDENT)
-            else:
-                return self.getToken(GrammarParser.IDENT, i)
+        def select_base_table(self):
+            return self.getTypedRuleContext(GrammarParser.Select_base_tableContext,0)
+
 
         def STAR(self):
             return self.getToken(GrammarParser.STAR, 0)
+
+        def select_base_field(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(GrammarParser.Select_base_fieldContext)
+            else:
+                return self.getTypedRuleContext(GrammarParser.Select_base_fieldContext,i)
+
 
         def COMMA(self, i:int=None):
             if i is None:
@@ -199,42 +342,42 @@ class GrammarParser ( Parser ):
     def select_base(self):
 
         localctx = GrammarParser.Select_baseContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 2, self.RULE_select_base)
+        self.enterRule(localctx, 6, self.RULE_select_base)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 19
+            self.state = 37
             self.match(GrammarParser.SELECT)
-            self.state = 29
+            self.state = 47
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [GrammarParser.IDENT]:
-                self.state = 20
-                self.match(GrammarParser.IDENT)
-                self.state = 25
+                self.state = 38
+                self.select_base_field()
+                self.state = 43
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==GrammarParser.COMMA:
-                    self.state = 21
+                    self.state = 39
                     self.match(GrammarParser.COMMA)
-                    self.state = 22
-                    self.match(GrammarParser.IDENT)
-                    self.state = 27
+                    self.state = 40
+                    self.select_base_field()
+                    self.state = 45
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
                 pass
             elif token in [GrammarParser.STAR]:
-                self.state = 28
+                self.state = 46
                 self.match(GrammarParser.STAR)
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 31
+            self.state = 49
             self.match(GrammarParser.FROM)
-            self.state = 32
-            self.match(GrammarParser.IDENT)
+            self.state = 50
+            self.select_base_table()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -250,9 +393,6 @@ class GrammarParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
-
-        def INNER_JOIN(self):
-            return self.getToken(GrammarParser.INNER_JOIN, 0)
 
         def RIGHT_JOIN(self):
             return self.getToken(GrammarParser.RIGHT_JOIN, 0)
@@ -275,13 +415,13 @@ class GrammarParser ( Parser ):
     def join_type(self):
 
         localctx = GrammarParser.Join_typeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 4, self.RULE_join_type)
+        self.enterRule(localctx, 8, self.RULE_join_type)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 34
+            self.state = 52
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << GrammarParser.INNER_JOIN) | (1 << GrammarParser.RIGHT_JOIN) | (1 << GrammarParser.LEFT_JOIN))) != 0)):
+            if not(_la==GrammarParser.RIGHT_JOIN or _la==GrammarParser.LEFT_JOIN):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -301,16 +441,18 @@ class GrammarParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+            self.left_table = None # Token
+            self.left_field = None # Token
+            self.right_table = None # Token
+            self.right_field = None # Token
 
         def join_type(self):
             return self.getTypedRuleContext(GrammarParser.Join_typeContext,0)
 
 
-        def IDENT(self, i:int=None):
-            if i is None:
-                return self.getTokens(GrammarParser.IDENT)
-            else:
-                return self.getToken(GrammarParser.IDENT, i)
+        def select_base_table(self):
+            return self.getTypedRuleContext(GrammarParser.Select_base_tableContext,0)
+
 
         def ON(self):
             return self.getToken(GrammarParser.ON, 0)
@@ -323,6 +465,12 @@ class GrammarParser ( Parser ):
 
         def EQUALS(self):
             return self.getToken(GrammarParser.EQUALS, 0)
+
+        def IDENT(self, i:int=None):
+            if i is None:
+                return self.getTokens(GrammarParser.IDENT)
+            else:
+                return self.getToken(GrammarParser.IDENT, i)
 
         def getRuleIndex(self):
             return GrammarParser.RULE_join_base
@@ -339,29 +487,29 @@ class GrammarParser ( Parser ):
     def join_base(self):
 
         localctx = GrammarParser.Join_baseContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 6, self.RULE_join_base)
+        self.enterRule(localctx, 10, self.RULE_join_base)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 36
+            self.state = 54
             self.join_type()
-            self.state = 37
-            self.match(GrammarParser.IDENT)
-            self.state = 38
+            self.state = 55
+            self.select_base_table()
+            self.state = 56
             self.match(GrammarParser.ON)
-            self.state = 39
-            self.match(GrammarParser.IDENT)
-            self.state = 40
+            self.state = 57
+            localctx.left_table = self.match(GrammarParser.IDENT)
+            self.state = 58
             self.match(GrammarParser.POINT)
-            self.state = 41
-            self.match(GrammarParser.IDENT)
-            self.state = 42
+            self.state = 59
+            localctx.left_field = self.match(GrammarParser.IDENT)
+            self.state = 60
             self.match(GrammarParser.EQUALS)
-            self.state = 43
-            self.match(GrammarParser.IDENT)
-            self.state = 44
+            self.state = 61
+            localctx.right_table = self.match(GrammarParser.IDENT)
+            self.state = 62
             self.match(GrammarParser.POINT)
-            self.state = 45
-            self.match(GrammarParser.IDENT)
+            self.state = 63
+            localctx.right_field = self.match(GrammarParser.IDENT)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -400,12 +548,12 @@ class GrammarParser ( Parser ):
     def simple_select_command(self):
 
         localctx = GrammarParser.Simple_select_commandContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 8, self.RULE_simple_select_command)
+        self.enterRule(localctx, 12, self.RULE_simple_select_command)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 47
+            self.state = 65
             self.select_base()
-            self.state = 48
+            self.state = 66
             self.match(GrammarParser.SEMI_COLUMN)
         except RecognitionException as re:
             localctx.exception = re
@@ -449,14 +597,14 @@ class GrammarParser ( Parser ):
     def select_with_join_command(self):
 
         localctx = GrammarParser.Select_with_join_commandContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 10, self.RULE_select_with_join_command)
+        self.enterRule(localctx, 14, self.RULE_select_with_join_command)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 50
+            self.state = 68
             self.select_base()
-            self.state = 51
+            self.state = 69
             self.join_base()
-            self.state = 52
+            self.state = 70
             self.match(GrammarParser.SEMI_COLUMN)
         except RecognitionException as re:
             localctx.exception = re

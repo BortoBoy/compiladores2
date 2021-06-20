@@ -1,0 +1,5 @@
+# tabelaX nao existe
+select tabelaX.colunaA as colA, tabelaX.colunaB as colB, tabelaX.colunaC as colC from tabelaY;
+
+# tabelaX nao existe pois teve um alias para tabelaY nessa sentenca
+select tabelaX.colunaA as colA, tabelaX.colunaB as colB, tabelaX.colunaC as colC from tabelaX as tabelaY;
