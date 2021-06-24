@@ -42,7 +42,7 @@ java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 
 
 ## Executar o projeto
 
-O arquivo para popular nosso banco para a execução do projeto é com o _mongo_CMD.txt_, nele inserimos na nossa tabela as pessoas necessárias para utilizarmos todos os casos de teste desse projeto.
+O arquivo para popular nosso banco para a execução do projeto é com o _mongo_CMD.txt_, nele inserimos na nossa tabela as pessoas necessárias para utilizarmos todos os casos de teste desse projeto. Basta copiar e colar a função que insere no shell do Mongo.
 
 Estando os arquivos listados acima gerados, podemos executar o arquivo _main.py_, que possui a implementação do projeto, usando o seguinte comando:
 
@@ -56,8 +56,12 @@ com esse comando a saída será impressa no terminal, se você quiser salvar a s
 python3 main.py input.txt output.txt
 ```
 
-Você também pode executar vários arquivos de uma vez passando o nome de uma pasta para inputs e de uam pasta para outputs, todos os arquivos de dentro da inputs serão executados e seus respectivos resutlados serão salvos com o respectivo nome na pasta outputs, exemplo:
+Com o arquivo gerado, basta inserir o código gerado no shell do Mongo para que seja possível visualizar seu resultado.
+
+Você também pode executar vários arquivos de uma vez passando o nome de uma pasta para inputs e de uma pasta para outputs, todos os arquivos de dentro da inputs serão executados e seus respectivos resutlados serão salvos com o respectivo nome na pasta outputs, exemplo:
 
 ```bash
 python3 main.py input output
 ```
+
+
