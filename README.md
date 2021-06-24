@@ -12,6 +12,14 @@ Esse trabalho implementará um compilador que traduz uma série de comandos do M
   <li> Sergio Ricardo Hideki Nisikava, RA: 551848 </li>
 </ol>
 
+<h2>Dependências</h2>
+<ol>
+  <li>Python 3.8.5</li>
+  <li>Java OpenJDK 11.0.11</li>
+  <li>Antrl 4.9.2</li>
+  <li>MongoDB 4.4</li>
+</ol>
+
 ## Como instalar e usar antlr4 em python
 - Abra um terminal na pasta antlr4-python3-runtime-4.9.2
 - Você pode baixar a pasta pelo link https://pypi.org/project/antlr4-python3-runtime/#files
@@ -34,6 +42,8 @@ java -Xmx500M -cp antlr-4.9.2-complete.jar org.antlr.v4.Tool -Dlanguage=Python3 
 
 ## Executar o projeto
 
+O arquivo para popular nosso banco para a execução do projeto é com o _mongo_CMD.txt_, nele inserimos na nossa tabela as pessoas necessárias para utilizarmos todos os casos de teste desse projeto.
+
 Estando os arquivos listados acima gerados, podemos executar o arquivo _main.py_, que possui a implementação do projeto, usando o seguinte comando:
 
 ```bash
@@ -49,5 +59,5 @@ python3 main.py input.txt output.txt
 Você também pode executar vários arquivos de uma vez passando o nome de uma pasta para inputs e de uam pasta para outputs, todos os arquivos de dentro da inputs serão executados e seus respectivos resutlados serão salvos com o respectivo nome na pasta outputs, exemplo:
 
 ```bash
-python3 main.py input.txt output.txt
+python3 main.py input output
 ```
