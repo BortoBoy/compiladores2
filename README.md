@@ -50,7 +50,7 @@ Estando os arquivos listados acima gerados, podemos executar o arquivo _main.py_
 python3 main.py input.txt
 ```
 
-com esse comando a saída será impressa no terminal, se você quiser salvar a saída em um arquivo basta usar:
+Com esse comando a saída será impressa no terminal, se você quiser salvar a saída em um arquivo basta usar:
 
 ```bash
 python3 main.py input.txt output.txt
