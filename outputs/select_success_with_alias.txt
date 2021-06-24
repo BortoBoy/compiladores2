@@ -1,0 +1,1 @@
+db.pessoa.find({}, {_id: 0, nomep: "$nome", idadep: "$idade"})

@@ -1,0 +1,28 @@
+db.pessoa.aggregate([
+   {
+     $lookup:
+       {
+         from: "pessoa",
+         localField: "cpf_filho",
+         foreignField: "cpf",
+         as: "dependente",
+       }
+  },
+  {
+    $project: {_id: 0, nome_responsavel: "$nome", nome_dependente: "$dependente.nome"}
+  }
+])
+db.pessoa.aggregate([
+   {
+     $lookup:
+       {
+         from: "pessoa",
+         localField: "cpf",
+         foreignField: "cpf_filho",
+         as: "responsavel",
+       }
+  },
+  {
+    $project: {_id: 0, nome_responsavel: "$responsavel.nome", nome_dependente: "$nome"}
+  }
+])

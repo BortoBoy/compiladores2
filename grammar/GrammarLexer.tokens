@@ -1,0 +1,25 @@
+SELECT=1
+FROM=2
+STAR=3
+SEMI_COLUMN=4
+COMMA=5
+POINT=6
+EQUALS=7
+RIGHT_JOIN=8
+LEFT_JOIN=9
+ON=10
+AS=11
+IDENT=12
+WS=13
+LINE_COMMENT=14
+'select'=1
+'from'=2
+'*'=3
+';'=4
+','=5
+'.'=6
+'='=7
+'right join'=8
+'left join'=9
+'on'=10
+'as'=11

@@ -1,0 +1,2 @@
+Join sentences require fields assigned to tables, field 'coluna1' is not assigned
+Join sentences require fields assigned to tables, field 'coluna2' is not assigned

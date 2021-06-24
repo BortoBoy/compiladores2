@@ -1,0 +1,8 @@
+# tabela z nao existe (fields)
+select x.coluna1, y.coluna2, z.coluna3 from tabela1 as x left join y on x.colunax = y.colunay;
+
+# tabela z nao existe (on)
+select x.coluna1, y.coluna2 from tabela1 as x left join y on z.colunax = y.colunay;
+
+# tabela y nao existe por conta do alias
+select x.coluna1, y.coluna2 from x left join y as z on x.colunax = z.colunay;
