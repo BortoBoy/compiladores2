@@ -1,9 +1,16 @@
-# Compiladores 2
-Projeto de implementação da disciplina de compiladores 2.
+<h1> Compiladores 2 </h1>
+Repositório destinado ao trabalho da disciplina de compiladores ministrada pelo professor Daniel Lucrédio. O trabalho da disciplina consiste em implementar um compilador completo para uma linguagem de sua escolha.
 
-## Descrição do projeto
+<h2> Descrição do projeto </h2>
 Esse trabalho implementará um compilador que traduz uma série de comandos do MongoDB
 à uma linguagem SQL.
+
+<h2> Membros do Grupo </h2>
+<ol>
+  <li> Gabriel Bortolote Pitarelli - 726514 </li>
+  <li> Paulo Vitor Tostes Betareli - 587648 </li>
+  <li> Sergio Ricardo Hideki Nisikava, RA: 551848 </li>
+</ol>
 
 ## Como instalar e usar antlr4 em python
 - Abra um terminal na pasta antlr4-python3-runtime-4.9.2
