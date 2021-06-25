@@ -14,10 +14,10 @@ Esse trabalho implementará um compilador que traduz uma série de comandos do M
 
 <h2>Dependências</h2>
 <ol>
-  <li>Python 3.8.5</li>
-  <li>Java OpenJDK 11.0.11</li>
-  <li>Antrl 4.9.2</li>
-  <li>MongoDB 4.4</li>
+  <li>Python 3.8.5: https://www.python.org/downloads/release/python-395/</li>
+  <li>Java OpenJDK 11.0.11: https://openjdk.java.net/install/</li>
+  <li>Antrl 4.9.2: https://github.com/antlr/antlr4/blob/master/doc/python-target.md</li>
+  <li>MongoDB 4.4: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/</li>
 </ol>
 
 ## Como instalar e usar antlr4 em python
